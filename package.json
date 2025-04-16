@@ -1,0 +1,42 @@
+{
+  "name": "rainfall-sensor-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "os": "^0.1.2",
+    "plotly.js": "^2.16.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-plotly.js": "^2.5.0",
+    "react-scripts": "5.0.1",
+    "socket.io-client": "^4.6.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"set NODE_OPTIONS=--openssl-legacy-provider && set PORT=3003 && react-scripts start\" \"cd C:\\Users\\nikki\\Desktop\\Rainfall Datasets\\rainfallapp-master && venv\\Scripts\\activate && python app.py\"",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "test": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
